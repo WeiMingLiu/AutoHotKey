@@ -1,0 +1,10 @@
+;win+tab to replace alt+tab (default key of VistaSwitcher)
+$#::
+Loop{
+	if not GetKeyState("LWin","P")
+		break;
+	else if GetKeyState("Tab","P")
+		send #{F11}
+		break;
+}
+return
